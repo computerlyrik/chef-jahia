@@ -16,4 +16,4 @@ default['jahia']['app_dir'] = "/jahia"
 
 
 default['jahia']['build_log'] = "/var/log/jahia_build.log"
-default['jahia']['local_repository'] = "/jahia_repository"
+default['jahia']['local_repository'] = "/jahia-repository"
