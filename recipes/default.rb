@@ -199,6 +199,7 @@ end
 ##checout and install jahia assets
 package "git-core"
 
+#needs modify of pom xml to build all modules
 git "/jahia-modules" do
   repository "https://github.com/Jahia/modules-set.git"
   action :sync
