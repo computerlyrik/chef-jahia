@@ -224,6 +224,12 @@ execute "install-templates" do
   subscribes :run, resources(:git => "/jahia-templates"), :immediately
 end
 
+
+#Default space web page needs also
+#https://github.com/Jahia/JahiApp-Blog.git
+#https://github.com/Jahia/JahiApp-Forum.git
+#https://github.com/Jahia/JahiApp-Wiki.git
+
 ##finalize
 execute "finalize" do
   command "chown -R #{node['tomcat']['user']}:#{node['tomcat']['user']} #{node['tomcat']['webapp_dir']}/ROOT  node['jahia']['local_repository']"
